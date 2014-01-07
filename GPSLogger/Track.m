@@ -15,11 +15,10 @@
 @dynamic created;
 @dynamic trackpoints;
 
-
 - (NSArray *)sotredTrackPoints
 {
     NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"created" ascending:YES];
-    return [self.trackpoints sortedArrayUsingDescriptors:[NSArray arrayWithObject:descriptor]];
+    return [self.trackpoints sortedArrayUsingDescriptors:@[descriptor]];
 }
 
 @end

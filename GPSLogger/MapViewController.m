@@ -6,22 +6,22 @@
 //  Copyright (c) 2012 NextBusinessSystem Co., Ltd. All rights reserved.
 //
 
+#import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MessageUI/MFMailComposeViewController.h>
-#import <KML/KML.h>
+#import "KML.h"
 #import "MapViewController.h"
 #import "TrackPoint.h"
 // Inngerband
-#import "CoreDataStore.h"
-#import "Functions.h"
+#import "IBCoreDataStore.h"
+#import "IBFunctions.h"
 #import "NSManagedObject+InnerBand.h"
 
 
 @interface MapViewController ()
-@property (strong, nonatomic) UIDocumentInteractionController *interactionController;
-@property (strong, nonatomic) CLLocationManager *locationManager;
-- (void)startLogging;
-- (void)showLog;
+@property (weak) IBOutlet MKMapView *mapView;
+@property (strong) UIDocumentInteractionController *interactionController;
+@property (strong) CLLocationManager *locationManager;
 @end
 
 @interface MapViewController (CLLocationManagerDelegate) <CLLocationManagerDelegate>
@@ -43,15 +43,7 @@
 @interface MapViewController (MFMailComposeViewControllerDelegate) <MFMailComposeViewControllerDelegate>
 @end
 
-
-
 @implementation MapViewController
-
-@synthesize mapView = __mapView;
-@synthesize track = __track;
-@synthesize locationManager = __locationManager;
-@synthesize interactionController = __interactionController;
-
 
 #pragma mark - View lifecycle
 
@@ -132,7 +124,7 @@
         
         self.track = [Track create];
         self.track.created = [NSDate date];
-        [[CoreDataStore mainStore] save];
+        [[IBCoreDataStore mainStore] save];
     }
 }
 
@@ -144,8 +136,10 @@
     // Thanks for elegant code!
     // https://gist.github.com/915374
     //
-    MKMapRect zoomRect = MKMapRectNull;
-    for (TrackPoint *trackPoint in self.track.trackpoints) {
+    __block MKMapRect zoomRect = MKMapRectNull;
+    [self.track.trackpoints enumerateObjectsUsingBlock:^(id obj, BOOL *stop)
+    {
+        TrackPoint *trackPoint = (TrackPoint *)obj;
         CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(trackPoint.latitude.floatValue, trackPoint.longitude.floatValue);
         MKMapPoint annotationPoint = MKMapPointForCoordinate(coordinate);
         MKMapRect pointRect = MKMapRectMake(annotationPoint.x, annotationPoint.y, 0, 0);
@@ -154,7 +148,7 @@
         } else {
             zoomRect = MKMapRectUnion(zoomRect, pointRect);
         }
-    }
+    }];
     [self.mapView setVisibleMapRect:zoomRect animated:NO];
 }
 
@@ -168,13 +162,13 @@
 {
     if (newLocation) {
         TrackPoint *trackpoint = [TrackPoint create];
-        trackpoint.latitude = [NSNumber numberWithFloat:newLocation.coordinate.latitude];
-        trackpoint.longitude = [NSNumber numberWithFloat:newLocation.coordinate.longitude];
-        trackpoint.altitude = [NSNumber numberWithFloat:newLocation.altitude];
+        trackpoint.latitude = @(newLocation.coordinate.latitude);
+        trackpoint.longitude = @(newLocation.coordinate.longitude);
+        trackpoint.altitude = @(newLocation.altitude);
         trackpoint.created = [NSDate date];
         [self.track addTrackpointsObject:trackpoint];
 
-        [[CoreDataStore mainStore] save];
+        [[IBCoreDataStore mainStore] save];
 
         // update annotation and overlay
         [self updateOverlay];
@@ -243,8 +237,8 @@
 - (NSString *)kmlFilePath
 {
     NSDateFormatter *formatter = [NSDateFormatter new];
-    [formatter setTimeStyle:NSDateFormatterFullStyle];
-    [formatter setDateFormat:@"yyyyMMddHHmmss"];
+    formatter.timeStyle = NSDateFormatterFullStyle;
+    formatter.dateFormat = @"yyyyMMddHHmmss";
     NSString *dateString = [formatter stringFromDate:[NSDate date]];
     
     NSString *fileName = [NSString stringWithFormat:@"log_%@.kml", dateString];
@@ -263,7 +257,7 @@
     NSArray *sortedTrackPoints = self.track.sotredTrackPoints;
     
     // kml > document > placemark#strat
-    TrackPoint *startPoint = [sortedTrackPoints objectAtIndex:0];
+    TrackPoint *startPoint = sortedTrackPoints[0];
     KMLPlacemark *startPlacemark = [self placemarkWithName:@"Start" coordinate:startPoint.coordinate];
     [document addFeature:startPlacemark];
     
@@ -313,15 +307,17 @@
     KMLPlacemark *placemark = [KMLPlacemark new];
     placemark.name = @"Line";
     
-    KMLLineString *lineString = [KMLLineString new];
+    __block KMLLineString *lineString = [KMLLineString new];
     placemark.geometry = lineString;
     
-    for (TrackPoint *trackPoint in trackPoints) {
+    [trackPoints enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop)
+    {
+        TrackPoint *trackPoint = (TrackPoint *)obj;
         KMLCoordinate *coordinate = [KMLCoordinate new];
         coordinate.latitude = trackPoint.coordinate.latitude;
         coordinate.longitude = trackPoint.coordinate.longitude;
         [lineString addCoordinate:coordinate];
-    }
+    }];
     
     KMLStyle *style = [KMLStyle new];
     [placemark addStyleSelector:style];
@@ -357,7 +353,7 @@
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     [controller addAttachmentData:data mimeType:@"application/vnd.google-earth.kml+xml" fileName:[filePath lastPathComponent]];
     
-    [self presentModalViewController:controller animated:YES];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -385,7 +381,7 @@
 
 - (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

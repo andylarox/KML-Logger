@@ -20,29 +20,14 @@
 		132C466C14D270ED0040EAC7 /* LogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C466B14D270ED0040EAC7 /* LogsViewController.m */; };
 		132C466F14D270FA0040EAC7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C466E14D270FA0040EAC7 /* MapViewController.m */; };
 		132C467214D271F30040EAC7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 132C467014D271F30040EAC7 /* Model.xcdatamodeld */; };
-		132C46BB14D272E70040EAC7 /* CGContext+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C468314D272E70040EAC7 /* CGContext+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46BC14D272E70040EAC7 /* NSArray+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C468514D272E70040EAC7 /* NSArray+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46BD14D272E70040EAC7 /* NSDate+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C468714D272E70040EAC7 /* NSDate+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46BE14D272E70040EAC7 /* NSManagedObject+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C468914D272E70040EAC7 /* NSManagedObject+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46BF14D272E70040EAC7 /* NSMutableArray+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C468B14D272E70040EAC7 /* NSMutableArray+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46C014D272E70040EAC7 /* NSMutableString+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C468D14D272E70040EAC7 /* NSMutableString+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46C114D272E70040EAC7 /* NSNumber+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C468F14D272E70040EAC7 /* NSNumber+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46C214D272E70040EAC7 /* NSObject+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C469114D272E70040EAC7 /* NSObject+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46C314D272E70040EAC7 /* NSString+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C469314D272E70040EAC7 /* NSString+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46C414D272E70040EAC7 /* UIColor+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C469514D272E70040EAC7 /* UIColor+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46C514D272E70040EAC7 /* UIImage+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C469714D272E70040EAC7 /* UIImage+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46C614D272E70040EAC7 /* UIView+InnerBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C469914D272E70040EAC7 /* UIView+InnerBand.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46C714D272E70040EAC7 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C469B14D272E70040EAC7 /* Functions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46C814D272E70040EAC7 /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C46A214D272E70040EAC7 /* ViewUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		132C46C914D272E70040EAC7 /* CoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C46A514D272E70040EAC7 /* CoreDataStore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		132C46DD14D273F10040EAC7 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C46DC14D273F10040EAC7 /* Track.m */; };
 		132C46E014D273F20040EAC7 /* TrackPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 132C46DF14D273F20040EAC7 /* TrackPoint.m */; };
 		132C46E214D274110040EAC7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132C46E114D274110040EAC7 /* CoreData.framework */; };
-		138D0FDA14D27FE300DF902E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 138D0FD914D27FE300DF902E /* README.md */; };
-		13D770AB14D8FE58005B0140 /* KML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13D770AA14D8FE58005B0140 /* KML.framework */; };
+		1CE9AF2D400D42CD9688DD4B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D8F7CAC31C4911B9E2406D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11D8F7CAC31C4911B9E2406D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1326E4CF14D28EF20016A925 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		132C464114D26F8C0040EAC7 /* GPSLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		132C464514D26F8C0040EAC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -62,46 +47,12 @@
 		132C466D14D270FA0040EAC7 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		132C466E14D270FA0040EAC7 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		132C467114D271F30040EAC7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		132C468214D272E70040EAC7 /* CGContext+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGContext+InnerBand.h"; sourceTree = "<group>"; };
-		132C468314D272E70040EAC7 /* CGContext+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGContext+InnerBand.m"; sourceTree = "<group>"; };
-		132C468414D272E70040EAC7 /* NSArray+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+InnerBand.h"; sourceTree = "<group>"; };
-		132C468514D272E70040EAC7 /* NSArray+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+InnerBand.m"; sourceTree = "<group>"; };
-		132C468614D272E70040EAC7 /* NSDate+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InnerBand.h"; sourceTree = "<group>"; };
-		132C468714D272E70040EAC7 /* NSDate+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InnerBand.m"; sourceTree = "<group>"; };
-		132C468814D272E70040EAC7 /* NSManagedObject+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+InnerBand.h"; sourceTree = "<group>"; };
-		132C468914D272E70040EAC7 /* NSManagedObject+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+InnerBand.m"; sourceTree = "<group>"; };
-		132C468A14D272E70040EAC7 /* NSMutableArray+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+InnerBand.h"; sourceTree = "<group>"; };
-		132C468B14D272E70040EAC7 /* NSMutableArray+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+InnerBand.m"; sourceTree = "<group>"; };
-		132C468C14D272E70040EAC7 /* NSMutableString+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+InnerBand.h"; sourceTree = "<group>"; };
-		132C468D14D272E70040EAC7 /* NSMutableString+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+InnerBand.m"; sourceTree = "<group>"; };
-		132C468E14D272E70040EAC7 /* NSNumber+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+InnerBand.h"; sourceTree = "<group>"; };
-		132C468F14D272E70040EAC7 /* NSNumber+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+InnerBand.m"; sourceTree = "<group>"; };
-		132C469014D272E70040EAC7 /* NSObject+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+InnerBand.h"; sourceTree = "<group>"; };
-		132C469114D272E70040EAC7 /* NSObject+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+InnerBand.m"; sourceTree = "<group>"; };
-		132C469214D272E70040EAC7 /* NSString+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+InnerBand.h"; sourceTree = "<group>"; };
-		132C469314D272E70040EAC7 /* NSString+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InnerBand.m"; sourceTree = "<group>"; };
-		132C469414D272E70040EAC7 /* UIColor+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+InnerBand.h"; sourceTree = "<group>"; };
-		132C469514D272E70040EAC7 /* UIColor+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+InnerBand.m"; sourceTree = "<group>"; };
-		132C469614D272E70040EAC7 /* UIImage+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+InnerBand.h"; sourceTree = "<group>"; };
-		132C469714D272E70040EAC7 /* UIImage+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+InnerBand.m"; sourceTree = "<group>"; };
-		132C469814D272E70040EAC7 /* UIView+InnerBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+InnerBand.h"; sourceTree = "<group>"; };
-		132C469914D272E70040EAC7 /* UIView+InnerBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+InnerBand.m"; sourceTree = "<group>"; };
-		132C469A14D272E70040EAC7 /* Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
-		132C469B14D272E70040EAC7 /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
-		132C469D14D272E70040EAC7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		132C469E14D272E70040EAC7 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
-		132C469F14D272E70040EAC7 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
-		132C46A114D272E70040EAC7 /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtil.h; sourceTree = "<group>"; };
-		132C46A214D272E70040EAC7 /* ViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtil.m; sourceTree = "<group>"; };
-		132C46A414D272E70040EAC7 /* CoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStore.h; sourceTree = "<group>"; };
-		132C46A514D272E70040EAC7 /* CoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStore.m; sourceTree = "<group>"; };
 		132C46DB14D273F10040EAC7 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
 		132C46DC14D273F10040EAC7 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 		132C46DE14D273F20040EAC7 /* TrackPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackPoint.h; sourceTree = "<group>"; };
 		132C46DF14D273F20040EAC7 /* TrackPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackPoint.m; sourceTree = "<group>"; };
 		132C46E114D274110040EAC7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		138D0FD914D27FE300DF902E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		13D770AA14D8FE58005B0140 /* KML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KML.framework; sourceTree = "<group>"; };
+		37DE27F8928F40618026FFD6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +67,7 @@
 				132C464614D26F8C0040EAC7 /* UIKit.framework in Frameworks */,
 				132C464814D26F8C0040EAC7 /* Foundation.framework in Frameworks */,
 				132C464A14D26F8C0040EAC7 /* CoreGraphics.framework in Frameworks */,
-				13D770AB14D8FE58005B0140 /* KML.framework in Frameworks */,
+				1CE9AF2D400D42CD9688DD4B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +80,7 @@
 				132C464B14D26F8C0040EAC7 /* GPSLogger */,
 				132C464414D26F8C0040EAC7 /* Frameworks */,
 				132C464214D26F8C0040EAC7 /* Products */,
+				37DE27F8928F40618026FFD6 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,7 +95,6 @@
 		132C464414D26F8C0040EAC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				13D770AA14D8FE58005B0140 /* KML.framework */,
 				1326E4CF14D28EF20016A925 /* MessageUI.framework */,
 				132C46E114D274110040EAC7 /* CoreData.framework */,
 				132C466614D26FA50040EAC7 /* MapKit.framework */,
@@ -151,6 +102,7 @@
 				132C464514D26F8C0040EAC7 /* UIKit.framework */,
 				132C464714D26F8C0040EAC7 /* Foundation.framework */,
 				132C464914D26F8C0040EAC7 /* CoreGraphics.framework */,
+				11D8F7CAC31C4911B9E2406D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,7 +114,6 @@
 				132C467314D272000040EAC7 /* Model */,
 				132C466814D26FB20040EAC7 /* App Delegate */,
 				132C466914D26FBE0040EAC7 /* Controller */,
-				132C46D114D272EB0040EAC7 /* Third Party */,
 				132C464C14D26F8C0040EAC7 /* Supporting Files */,
 			);
 			path = GPSLogger;
@@ -211,95 +162,6 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		132C467414D272E70040EAC7 /* InnerBand */ = {
-			isa = PBXGroup;
-			children = (
-				138D0FD914D27FE300DF902E /* README.md */,
-				132C468014D272E70040EAC7 /* Core */,
-				132C46A314D272E70040EAC7 /* Core Data */,
-			);
-			path = InnerBand;
-			sourceTree = "<group>";
-		};
-		132C468014D272E70040EAC7 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				132C468114D272E70040EAC7 /* Categories */,
-				132C469A14D272E70040EAC7 /* Functions.h */,
-				132C469B14D272E70040EAC7 /* Functions.m */,
-				132C469C14D272E70040EAC7 /* Macros */,
-				132C46A014D272E70040EAC7 /* Utils */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		132C468114D272E70040EAC7 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				132C468214D272E70040EAC7 /* CGContext+InnerBand.h */,
-				132C468314D272E70040EAC7 /* CGContext+InnerBand.m */,
-				132C468414D272E70040EAC7 /* NSArray+InnerBand.h */,
-				132C468514D272E70040EAC7 /* NSArray+InnerBand.m */,
-				132C468614D272E70040EAC7 /* NSDate+InnerBand.h */,
-				132C468714D272E70040EAC7 /* NSDate+InnerBand.m */,
-				132C468814D272E70040EAC7 /* NSManagedObject+InnerBand.h */,
-				132C468914D272E70040EAC7 /* NSManagedObject+InnerBand.m */,
-				132C468A14D272E70040EAC7 /* NSMutableArray+InnerBand.h */,
-				132C468B14D272E70040EAC7 /* NSMutableArray+InnerBand.m */,
-				132C468C14D272E70040EAC7 /* NSMutableString+InnerBand.h */,
-				132C468D14D272E70040EAC7 /* NSMutableString+InnerBand.m */,
-				132C468E14D272E70040EAC7 /* NSNumber+InnerBand.h */,
-				132C468F14D272E70040EAC7 /* NSNumber+InnerBand.m */,
-				132C469014D272E70040EAC7 /* NSObject+InnerBand.h */,
-				132C469114D272E70040EAC7 /* NSObject+InnerBand.m */,
-				132C469214D272E70040EAC7 /* NSString+InnerBand.h */,
-				132C469314D272E70040EAC7 /* NSString+InnerBand.m */,
-				132C469414D272E70040EAC7 /* UIColor+InnerBand.h */,
-				132C469514D272E70040EAC7 /* UIColor+InnerBand.m */,
-				132C469614D272E70040EAC7 /* UIImage+InnerBand.h */,
-				132C469714D272E70040EAC7 /* UIImage+InnerBand.m */,
-				132C469814D272E70040EAC7 /* UIView+InnerBand.h */,
-				132C469914D272E70040EAC7 /* UIView+InnerBand.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		132C469C14D272E70040EAC7 /* Macros */ = {
-			isa = PBXGroup;
-			children = (
-				132C469D14D272E70040EAC7 /* Constants.h */,
-				132C469E14D272E70040EAC7 /* Macros.h */,
-				132C469F14D272E70040EAC7 /* Types.h */,
-			);
-			path = Macros;
-			sourceTree = "<group>";
-		};
-		132C46A014D272E70040EAC7 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				132C46A114D272E70040EAC7 /* ViewUtil.h */,
-				132C46A214D272E70040EAC7 /* ViewUtil.m */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		132C46A314D272E70040EAC7 /* Core Data */ = {
-			isa = PBXGroup;
-			children = (
-				132C46A414D272E70040EAC7 /* CoreDataStore.h */,
-				132C46A514D272E70040EAC7 /* CoreDataStore.m */,
-			);
-			path = "Core Data";
-			sourceTree = "<group>";
-		};
-		132C46D114D272EB0040EAC7 /* Third Party */ = {
-			isa = PBXGroup;
-			children = (
-				132C467414D272E70040EAC7 /* InnerBand */,
-			);
-			name = "Third Party";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 132C465F14D26F8D0040EAC7 /* Build configuration list for PBXNativeTarget "GPSLogger" */;
 			buildPhases = (
+				056010F59DBC4C84A259AE7A /* Check Pods Manifest.lock */,
 				132C463D14D26F8C0040EAC7 /* Sources */,
 				132C463E14D26F8C0040EAC7 /* Frameworks */,
 				132C463F14D26F8C0040EAC7 /* Resources */,
+				E13424FE34524EBA96C85268 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,11 +216,43 @@
 			files = (
 				132C465014D26F8C0040EAC7 /* InfoPlist.strings in Resources */,
 				132C465914D26F8D0040EAC7 /* MainStoryboard.storyboard in Resources */,
-				138D0FDA14D27FE300DF902E /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		056010F59DBC4C84A259AE7A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E13424FE34524EBA96C85268 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		132C463D14D26F8C0040EAC7 /* Sources */ = {
@@ -368,21 +264,6 @@
 				132C466C14D270ED0040EAC7 /* LogsViewController.m in Sources */,
 				132C466F14D270FA0040EAC7 /* MapViewController.m in Sources */,
 				132C467214D271F30040EAC7 /* Model.xcdatamodeld in Sources */,
-				132C46BB14D272E70040EAC7 /* CGContext+InnerBand.m in Sources */,
-				132C46BC14D272E70040EAC7 /* NSArray+InnerBand.m in Sources */,
-				132C46BD14D272E70040EAC7 /* NSDate+InnerBand.m in Sources */,
-				132C46BE14D272E70040EAC7 /* NSManagedObject+InnerBand.m in Sources */,
-				132C46BF14D272E70040EAC7 /* NSMutableArray+InnerBand.m in Sources */,
-				132C46C014D272E70040EAC7 /* NSMutableString+InnerBand.m in Sources */,
-				132C46C114D272E70040EAC7 /* NSNumber+InnerBand.m in Sources */,
-				132C46C214D272E70040EAC7 /* NSObject+InnerBand.m in Sources */,
-				132C46C314D272E70040EAC7 /* NSString+InnerBand.m in Sources */,
-				132C46C414D272E70040EAC7 /* UIColor+InnerBand.m in Sources */,
-				132C46C514D272E70040EAC7 /* UIImage+InnerBand.m in Sources */,
-				132C46C614D272E70040EAC7 /* UIView+InnerBand.m in Sources */,
-				132C46C714D272E70040EAC7 /* Functions.m in Sources */,
-				132C46C814D272E70040EAC7 /* ViewUtil.m in Sources */,
-				132C46C914D272E70040EAC7 /* CoreDataStore.m in Sources */,
 				132C46DD14D273F10040EAC7 /* Track.m in Sources */,
 				132C46E014D273F20040EAC7 /* TrackPoint.m in Sources */,
 			);
@@ -430,7 +311,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -448,7 +329,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -457,6 +338,7 @@
 		};
 		132C466014D26F8D0040EAC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37DE27F8928F40618026FFD6 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,6 +354,7 @@
 		};
 		132C466114D26F8D0040EAC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37DE27F8928F40618026FFD6 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -7,10 +7,10 @@
 //
 
 #import "LogsViewController.h"
-#import "CoreDataStore.h"
+#import "MapViewController.h"
+#import "IBCoreDataStore.h"
 #import "NSManagedObject+InnerBand.h"
 #import "Track.h"
-#import "MapViewController.h"
 
 @interface LogsViewController ()
 @property (strong, nonatomic) NSArray *tracks;
@@ -22,12 +22,7 @@
 @interface LogsViewController (UITableViewDelegate) <UITableViewDelegate>
 @end
 
-
-
 @implementation LogsViewController
-
-@synthesize tracks = __tracks;
-
 
 #pragma mark - View lifecycle
 
@@ -42,8 +37,8 @@
 {
     [super viewWillAppear:animated];
     
-    NSError *error;
-    self.tracks = [[CoreDataStore mainStore] allForEntity:@"Track" orderBy:@"created" ascending:NO error:&error];
+    NSError *error = nil;
+    self.tracks = [[IBCoreDataStore mainStore] allForEntity:@"Track" orderBy:@"created" ascending:NO error:&error];
     if (error) {
         NSLog(@"%@", error);
     }
@@ -61,7 +56,7 @@
     if ([segue.identifier isEqualToString:@"PushMapViewController"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        Track *track = [self.tracks objectAtIndex:indexPath.row];
+        Track *track = self.tracks[indexPath.row];
 
         MapViewController *viewController = (MapViewController *)segue.destinationViewController;
         viewController.track = track;
@@ -90,7 +85,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    Track *track = [self.tracks objectAtIndex:indexPath.row];
+    Track *track = self.tracks[indexPath.row];
     
     NSDateFormatter *formatter = [NSDateFormatter new];
     formatter.dateFormat = @"yyyy-MM-dd hh:mm:ss";
@@ -110,16 +105,16 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        Track *track = [self.tracks objectAtIndex:indexPath.row];
+        Track *track = self.tracks[indexPath.row];
         
-        NSMutableArray *array = [NSMutableArray arrayWithArray:self.tracks];
+        NSMutableArray *array = self.tracks.mutableCopy;
         [array removeObject:track];
         self.tracks = [NSArray arrayWithArray:array];
         
         [track destroy];
-        [[CoreDataStore mainStore] save];
+        [[IBCoreDataStore mainStore] save];
         
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 

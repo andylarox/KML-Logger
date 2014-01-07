@@ -7,15 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
 #import "Track.h"
 
 @interface MapViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) Track *track;
-
-- (IBAction)close:(id)sender;
-- (IBAction)action:(id)sender;
 
 @end
